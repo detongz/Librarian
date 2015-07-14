@@ -12,3 +12,6 @@ G:\Codes\CS\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryMan
 G:\Codes\CS\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddBook.resources
 G:\Codes\CS\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BorrowBook.resources
 G:\Codes\CS\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBook.resources
+C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
