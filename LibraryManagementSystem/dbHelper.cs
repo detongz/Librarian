@@ -26,7 +26,7 @@ namespace LibraryManagementSystem
         {
             get
             {
-                string strConn = ConfigurationManager.AppSettings["conn"];
+                string strConn = "Data Source=.;Initial Catalog=bookManage;Integrated Security=True;Pooling=False";//ConfigurationManager.AppSettings["conn"];
                 //configurationManager不存在上下文终极解决方案：引用中添加system.configuratioin
                 if (conn == null)
                 {
@@ -44,6 +44,33 @@ namespace LibraryManagementSystem
                 }
                 return conn;
             }
+        }
+
+        public static int ExecuteCommand(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql,Conn);
+            int i = cmd.ExecuteNonQuery();
+            return i;
+        }
+
+        public static object GetScalar(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, Conn);
+            object o = cmd.ExecuteScalar();
+            return o;
+        }
+        public static SqlDataReader GetDataReader(string sql)
+        {
+            SqlCommand cmd = new SqlCommand(sql, Conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            return dr;
+        }
+        public static DataSet GetDataSet(string sql)
+        {
+            SqlDataAdapter adp = new SqlDataAdapter(sql, Conn);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            return ds;
         }
     }
 }

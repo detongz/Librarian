@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,25 +14,29 @@ namespace LibraryManagementSystem
     public partial class Reader : Form
     {
         public string correctID;
+        public string userid;
        public void getID(string id)
         {
            this.correctID = id;
         }
-        public Reader()
+       public Reader(string name)
         {
- 
+            userid = name;
             InitializeComponent();
         }
 
         private void Reader_Load(object sender, EventArgs e)
         {
+            lblUsername.Text = userid;
             //打开数据库
             //初始化DGV控件顺序显示全部数据
+
+
         }
 
         
         /// <summary>
-        /// 关闭窗口时提示信息，关闭整个进程
+        /// 关闭窗口时提示信息，关闭整个程序
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -39,12 +44,12 @@ namespace LibraryManagementSystem
         {
             if (MessageBox.Show("你确定要退出？", "系统提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
-
-                Application.Exit();
-                e.Cancel = false;
+                this.Dispose();
+                System.Environment.Exit(0);
             }
             else
                 e.Cancel = true;
+
         }
         /// <summary>
         /// 按关键字和分类查找书
