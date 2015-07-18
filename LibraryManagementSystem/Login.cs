@@ -29,41 +29,17 @@ namespace LibraryManagementSystem
         private void btnLogin_Click(object sender, EventArgs e)
         {
             //三层架构——数据连接层，获取用户登录信息
-            int success = getUserInfo.userLogin(txtID.Text.Trim(), txtPwd.Text.Trim());
-
-                if (radManager.Checked == true)
-                {
-
-                    if (success==2)//判断密码用户是否正确
-                    {//登录成功
-                        this.Hide();
-                        Reader reader = new Reader(txtID.Text.Trim());
-                        reader.Show();
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("登录失败！");
-                    }
-
-                }
-                if (radReader.Checked == true)
-                {
-
-                    if (success==1)//判断密码用户是否正确
-                    {//登录成功
-                        this.Hide();
-                        Reader reader = new Reader(txtID.Text.Trim());
-                        reader.Show();
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("登录失败！");
-                    }
-
-                }
-
+            int success = getUserInfo.userLogin(txtID.Text.Trim(), txtPwd.Text.Trim(), radManager.Checked? 2 : 1);
+            if (success > 0)//判断密码用户是否正确
+            {//登录成功
+                this.Hide();
+                Reader reader = new Reader(txtID.Text.Trim());
+                reader.Show();
+            }
+            else
+            {
+                MessageBox.Show("登录失败！");
+            }
         }
 
         private void btnQuit_Click(object sender, EventArgs e)

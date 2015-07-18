@@ -266,6 +266,7 @@
             this.Controls.Add(this.label4);
             this.Name = "AddBook";
             this.Text = "新增图书";
+            this.Load += new System.EventHandler(this.AddBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbCover)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

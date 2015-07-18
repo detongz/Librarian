@@ -62,18 +62,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 89);
+            this.label1.Location = new System.Drawing.Point(14, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "查询方式";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 137);
+            this.label2.Location = new System.Drawing.Point(16, 126);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 1;
             this.label2.Text = "关键字";
             // 
@@ -84,23 +84,23 @@
             "书名",
             "作者",
             "出版社"});
-            this.cmbSearch.Location = new System.Drawing.Point(89, 89);
+            this.cmbSearch.Location = new System.Drawing.Point(89, 82);
             this.cmbSearch.Name = "cmbSearch";
-            this.cmbSearch.Size = new System.Drawing.Size(121, 21);
+            this.cmbSearch.Size = new System.Drawing.Size(121, 20);
             this.cmbSearch.TabIndex = 2;
             // 
             // txtKeyWord
             // 
-            this.txtKeyWord.Location = new System.Drawing.Point(89, 127);
+            this.txtKeyWord.Location = new System.Drawing.Point(89, 117);
             this.txtKeyWord.Name = "txtKeyWord";
-            this.txtKeyWord.Size = new System.Drawing.Size(100, 20);
+            this.txtKeyWord.Size = new System.Drawing.Size(100, 21);
             this.txtKeyWord.TabIndex = 3;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(196, 124);
+            this.btnSearch.Location = new System.Drawing.Point(196, 114);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 25);
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "搜索";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // btnBorrow
             // 
-            this.btnBorrow.Location = new System.Drawing.Point(237, 89);
+            this.btnBorrow.Location = new System.Drawing.Point(237, 82);
             this.btnBorrow.Name = "btnBorrow";
-            this.btnBorrow.Size = new System.Drawing.Size(75, 25);
+            this.btnBorrow.Size = new System.Drawing.Size(75, 23);
             this.btnBorrow.TabIndex = 5;
             this.btnBorrow.Text = "借书";
             this.btnBorrow.UseVisualStyleBackColor = true;
@@ -118,9 +118,9 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(318, 89);
+            this.btnReturn.Location = new System.Drawing.Point(318, 82);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(75, 25);
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
             this.btnReturn.TabIndex = 6;
             this.btnReturn.Text = "还书";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -128,9 +128,9 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(359, 124);
+            this.btnRefresh.Location = new System.Drawing.Point(359, 114);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 25);
+            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 7;
             this.btnRefresh.Text = "刷新";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -139,20 +139,22 @@
             // dgvBook
             // 
             this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBook.Location = new System.Drawing.Point(13, 209);
+            this.dgvBook.DataMember = "Table";
+            this.dgvBook.Location = new System.Drawing.Point(13, 193);
             this.dgvBook.MultiSelect = false;
             this.dgvBook.Name = "dgvBook";
             this.dgvBook.ReadOnly = true;
             this.dgvBook.RowTemplate.Height = 23;
-            this.dgvBook.Size = new System.Drawing.Size(421, 326);
+            this.dgvBook.Size = new System.Drawing.Size(421, 301);
             this.dgvBook.TabIndex = 8;
             this.dgvBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBook_CellClick);
+            this.dgvBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBook_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(649, 71);
+            this.label3.Location = new System.Drawing.Point(649, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 29);
             this.label3.TabIndex = 9;
@@ -161,136 +163,136 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(472, 119);
+            this.label4.Location = new System.Drawing.Point(472, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 10;
             this.label4.Text = "ISBN号";
             // 
             // txtISBN
             // 
-            this.txtISBN.Location = new System.Drawing.Point(539, 119);
+            this.txtISBN.Location = new System.Drawing.Point(539, 110);
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.ReadOnly = true;
-            this.txtISBN.Size = new System.Drawing.Size(174, 20);
+            this.txtISBN.Size = new System.Drawing.Size(174, 21);
             this.txtISBN.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(472, 162);
+            this.label5.Location = new System.Drawing.Point(472, 150);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 12;
             this.label5.Text = "书名";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(539, 162);
+            this.txtName.Location = new System.Drawing.Point(539, 150);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
-            this.txtName.Size = new System.Drawing.Size(174, 20);
+            this.txtName.Size = new System.Drawing.Size(174, 21);
             this.txtName.TabIndex = 13;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(472, 206);
+            this.label6.Location = new System.Drawing.Point(472, 190);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 13);
+            this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 14;
             this.label6.Text = "作者";
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(539, 212);
+            this.txtAuthor.Location = new System.Drawing.Point(539, 196);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.ReadOnly = true;
-            this.txtAuthor.Size = new System.Drawing.Size(174, 20);
+            this.txtAuthor.Size = new System.Drawing.Size(174, 21);
             this.txtAuthor.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(472, 249);
+            this.label7.Location = new System.Drawing.Point(472, 230);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.Size = new System.Drawing.Size(41, 12);
             this.label7.TabIndex = 16;
             this.label7.Text = "出版社";
             // 
             // txtPress
             // 
-            this.txtPress.Location = new System.Drawing.Point(539, 255);
+            this.txtPress.Location = new System.Drawing.Point(539, 235);
             this.txtPress.Name = "txtPress";
             this.txtPress.ReadOnly = true;
-            this.txtPress.Size = new System.Drawing.Size(174, 20);
+            this.txtPress.Size = new System.Drawing.Size(174, 21);
             this.txtPress.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(472, 292);
+            this.label8.Location = new System.Drawing.Point(472, 270);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 18;
             this.label8.Text = "出版日期";
             // 
             // txtPressDate
             // 
-            this.txtPressDate.Location = new System.Drawing.Point(539, 297);
+            this.txtPressDate.Location = new System.Drawing.Point(539, 274);
             this.txtPressDate.Name = "txtPressDate";
             this.txtPressDate.ReadOnly = true;
-            this.txtPressDate.Size = new System.Drawing.Size(174, 20);
+            this.txtPressDate.Size = new System.Drawing.Size(174, 21);
             this.txtPressDate.TabIndex = 19;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(539, 338);
+            this.txtPrice.Location = new System.Drawing.Point(539, 312);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.ReadOnly = true;
-            this.txtPrice.Size = new System.Drawing.Size(174, 20);
+            this.txtPrice.Size = new System.Drawing.Size(174, 21);
             this.txtPrice.TabIndex = 20;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(472, 335);
+            this.label9.Location = new System.Drawing.Point(472, 309);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.Size = new System.Drawing.Size(29, 12);
             this.label9.TabIndex = 21;
             this.label9.Text = "单价";
             // 
             // pbCover
             // 
-            this.pbCover.Location = new System.Drawing.Point(740, 123);
+            this.pbCover.Location = new System.Drawing.Point(740, 114);
             this.pbCover.Name = "pbCover";
-            this.pbCover.Size = new System.Drawing.Size(151, 238);
+            this.pbCover.Size = new System.Drawing.Size(151, 220);
             this.pbCover.TabIndex = 22;
             this.pbCover.TabStop = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(472, 385);
+            this.label10.Location = new System.Drawing.Point(472, 355);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.Size = new System.Drawing.Size(53, 12);
             this.label10.TabIndex = 23;
             this.label10.Text = "内容简介";
             // 
             // txtContent
             // 
-            this.txtContent.Location = new System.Drawing.Point(539, 388);
+            this.txtContent.Location = new System.Drawing.Point(539, 358);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
             this.txtContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtContent.Size = new System.Drawing.Size(326, 122);
+            this.txtContent.Size = new System.Drawing.Size(326, 113);
             this.txtContent.TabIndex = 24;
             // 
             // btnALL
             // 
-            this.btnALL.Location = new System.Drawing.Point(277, 124);
+            this.btnALL.Location = new System.Drawing.Point(277, 114);
             this.btnALL.Name = "btnALL";
-            this.btnALL.Size = new System.Drawing.Size(75, 25);
+            this.btnALL.Size = new System.Drawing.Size(75, 23);
             this.btnALL.TabIndex = 43;
             this.btnALL.Text = "全部";
             this.btnALL.UseVisualStyleBackColor = true;
@@ -299,17 +301,17 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(16, 27);
+            this.lblUsername.Location = new System.Drawing.Point(16, 25);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(53, 13);
+            this.lblUsername.Size = new System.Drawing.Size(53, 12);
             this.lblUsername.TabIndex = 44;
             this.lblUsername.Text = "username";
             // 
             // Reader
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(902, 567);
+            this.ClientSize = new System.Drawing.Size(902, 523);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.btnALL);
             this.Controls.Add(this.txtContent);

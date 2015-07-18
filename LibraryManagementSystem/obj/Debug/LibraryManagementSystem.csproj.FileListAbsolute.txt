@@ -26,3 +26,17 @@ C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\L
 C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Manager.resources
 C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBook.resources
 C:\Users\tbbrave\Documents\Visual Studio 2013\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojResolveAssemblyReference.cache
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.AddBook.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BorrowBook.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Login.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Reader.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Manager.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.ReturnBook.resources
+Z:\wuyihao\home\wuyihao\Librarian\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache

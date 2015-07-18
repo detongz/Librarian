@@ -26,51 +26,92 @@ namespace LibraryManagementSystem
         {
             get
             {
-                string strConn = "Data Source=.;Initial Catalog=bookManage;Integrated Security=True;Pooling=False";//ConfigurationManager.AppSettings["conn"];
-                //configurationManager不存在上下文终极解决方案：引用中添加system.configuratioin
-                if (conn == null)
+                try
                 {
-                    conn = new SqlConnection(strConn);
-                    conn.Open();
+                    string strConn = "Data Source=.;Initial Catalog=bookManage;Integrated Security=True;Pooling=False";//ConfigurationManager.AppSettings["conn"];
+                    //configurationManager不存在上下文终极解决方案：引用中添加system.configuratioin
+                    if (conn == null)
+                    {
+                        conn = new SqlConnection(strConn);
+                        conn.Open();
+                    }
+                    else if (conn.State == ConnectionState.Broken)
+                    {
+                        conn.Close();
+                        conn.Open();
+                    }
+                    else if (conn.State == ConnectionState.Closed)
+                    {
+                        conn.Open();
+                    }
+                    return conn;
                 }
-                else if (conn.State==ConnectionState.Broken)
+                catch (SqlException)
                 {
-                    conn.Close();
-                    conn.Open();
+                    Console.WriteLine("Open Database failed!");
+                    Environment.Exit(1);
+                    return conn;
                 }
-                else if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                }
-                return conn;
             }
         }
 
         public static int ExecuteCommand(string sql)
         {
-            SqlCommand cmd = new SqlCommand(sql,Conn);
-            int i = cmd.ExecuteNonQuery();
-            return i;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, Conn);
+                int i = cmd.ExecuteNonQuery();
+                return i;
+            }
+            catch (SqlException)
+            {
+                Console.WriteLine("Failed to excecute command!");
+                throw;
+            }
         }
 
         public static object GetScalar(string sql)
         {
-            SqlCommand cmd = new SqlCommand(sql, Conn);
-            object o = cmd.ExecuteScalar();
-            return o;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, Conn);
+                object o = cmd.ExecuteScalar();
+                return o;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Failed to excecute command!");
+                throw;
+            }
         }
         public static SqlDataReader GetDataReader(string sql)
         {
-            SqlCommand cmd = new SqlCommand(sql, Conn);
-            SqlDataReader dr = cmd.ExecuteReader();
-            return dr;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(sql, Conn);
+                SqlDataReader dr = cmd.ExecuteReader();
+                return dr;
+            }
+            catch (SqlException)
+            {
+                Console.WriteLine("Failed to get data reader!");
+                throw;
+            }
         }
         public static DataSet GetDataSet(string sql)
         {
-            SqlDataAdapter adp = new SqlDataAdapter(sql, Conn);
-            DataSet ds = new DataSet();
-            adp.Fill(ds);
-            return ds;
+            try
+            {
+                SqlDataAdapter adp = new SqlDataAdapter(sql, Conn);
+                DataSet ds = new DataSet();
+                adp.Fill(ds);
+                return ds;
+            }
+            catch (SqlException)
+            {
+                Console.WriteLine("Failed to get data adapter!");
+                throw;
+            }
         }
     }
 }

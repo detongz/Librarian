@@ -68,25 +68,27 @@ namespace LibraryManagementSystem
             }
             else
             {
-
-                if (cmbSearch.Text == "书名")
+                if (cmbSearch.SelectedItem.ToString() == "书名")
                 {
+                    dgvBook.DataSource = getBookInfo.bookByName(txtKeyWord.Text);
                     //打开数据库按书名查找       
-
+                    
                     //将结果绑定到dgv控件中
                     //dgvBook.DataSource = 
 
                 }
-                if (cmbSearch.Text == "作者")
+                else if (cmbSearch.SelectedItem.ToString() == "作者")
                 {
+                    dgvBook.DataSource = getBookInfo.bookByAuthor(txtKeyWord.Text);
                     //打开数据库按作者查找 
 
                     //将结果绑定到dgv控件中
                     //dgvBook.DataSource = 
                     
                 }
-                if (cmbSearch.Text == "出版社")
+                else if (cmbSearch.Text == "出版社")
                 {
+                    dgvBook.DataSource = getBookInfo.bookByPress(txtKeyWord.Text);
                     //打开数据库按出版社查找 
 
                     //将结果绑定到dgv控件中
@@ -110,13 +112,13 @@ namespace LibraryManagementSystem
         /// <param name="e"></param>
         private void dgvBook_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtISBN.Text = dgvBook.SelectedCells[0].Value.ToString();
-            txtName.Text = dgvBook.SelectedCells[1].Value.ToString();
-            txtAuthor.Text = dgvBook.SelectedCells[2].Value.ToString();
-            txtPress.Text = dgvBook.SelectedCells[3].Value.ToString();
-            txtPressDate.Text = dgvBook.SelectedCells[4].Value.ToString();
-            txtPrice.Text = dgvBook.SelectedCells[5].Value.ToString();
-            txtContent.Text = dgvBook.SelectedCells[6].Value.ToString();
+            txtISBN.Text = dgvBook.CurrentRow.Cells[0].Value.ToString();
+            txtName.Text = dgvBook.CurrentRow.Cells[1].Value.ToString();
+            txtAuthor.Text = dgvBook.CurrentRow.Cells[2].Value.ToString();
+            txtPress.Text = dgvBook.CurrentRow.Cells[3].Value.ToString();
+            txtPressDate.Text = dgvBook.CurrentRow.Cells[4].Value.ToString();
+            txtPrice.Text = dgvBook.CurrentRow.Cells[5].Value.ToString();
+            txtContent.Text = dgvBook.CurrentRow.Cells[6].Value.ToString();
         }
         /// <summary>
         /// 刷新，重新加载信息
@@ -170,6 +172,11 @@ namespace LibraryManagementSystem
             ReturnBook returnBook = new ReturnBook();
             returnBook.GetReaderInfo(correctID);
             returnBook.ShowDialog();
+        }
+
+        private void dgvBook_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

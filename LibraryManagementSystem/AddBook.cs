@@ -104,5 +104,10 @@ namespace LibraryManagementSystem
                 e.Handled = true;//判断为数字
             }
         }
+
+        private void AddBook_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
