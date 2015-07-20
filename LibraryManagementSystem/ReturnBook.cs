@@ -41,6 +41,8 @@ namespace LibraryManagementSystem
         {
             //链接数据库，根据当前用户的correctID获取相关信息并绑定到dgv控件中
             this.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\ReturnBackground.png");
+            this.btnReturn.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\Login_submit.png");
+            this.btnQuit.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\Login_quit.png");
             this.lblID.Text = correctID;
             this.lblAvailable.Text = 5.ToString();
             this.lblKept.Text = 0.ToString();

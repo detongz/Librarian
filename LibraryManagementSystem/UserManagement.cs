@@ -20,7 +20,7 @@ namespace LibraryManagementSystem
             this.txtID.ReadOnly = true;
             this.manager = manager;
         }
-        public void UserManagement_Load(object sender, EventArgs e)
+        private void UserManagement_Load(object sender, EventArgs e)
         {
 
             //向datagridview中载入数据
@@ -67,17 +67,15 @@ namespace LibraryManagementSystem
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //管理员用户
             if(this.tabControl1.SelectedTab == this.tabPage1)
             {
-                SignUp su = new SignUp(this,dgvAdmin.CurrentRow,1);
+                SignUp su = new SignUp(this,dgvAdmin.CurrentRow);
                 su.Show();
                 this.Hide();
             }
-            //普通用户
             else
             {
-                SignUp su = new SignUp(this, dgvReader.CurrentRow,0);
+                SignUp su = new SignUp(this, dgvReader.CurrentRow);
                 su.Show();
                 this.Hide();
             }

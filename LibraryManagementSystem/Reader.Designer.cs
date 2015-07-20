@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reader));
             this.cmbSearch = new System.Windows.Forms.ComboBox();
             this.txtKeyWord = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -435,7 +434,6 @@
             this.Controls.Add(this.txtKeyWord);
             this.Controls.Add(this.cmbSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Reader";
             this.ShowIcon = false;

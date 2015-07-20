@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnBook));
             this.dgvKeptBooks = new System.Windows.Forms.DataGridView();
             this.btnReturn = new System.Windows.Forms.Button();
             this.lblAvailable = new System.Windows.Forms.Label();
@@ -68,7 +67,6 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.BackColor = System.Drawing.Color.Pink;
             this.btnReturn.FlatAppearance.BorderSize = 0;
             this.btnReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReturn.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +76,7 @@
             this.btnReturn.Size = new System.Drawing.Size(85, 41);
             this.btnReturn.TabIndex = 17;
             this.btnReturn.Text = "Return";
-            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // lblAvailable
@@ -143,7 +141,6 @@
             // 
             // btnQuit
             // 
-            this.btnQuit.BackColor = System.Drawing.Color.SandyBrown;
             this.btnQuit.FlatAppearance.BorderSize = 0;
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuit.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,7 +150,7 @@
             this.btnQuit.Size = new System.Drawing.Size(89, 41);
             this.btnQuit.TabIndex = 42;
             this.btnQuit.Text = "Quit";
-            this.btnQuit.UseVisualStyleBackColor = false;
+            this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // label5
@@ -229,7 +226,6 @@
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReturnBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "还书";

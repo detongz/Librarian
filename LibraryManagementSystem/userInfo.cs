@@ -96,7 +96,7 @@ namespace LibraryManagementSystem
             {
                 return -2;
             }
-            sql = "insert into admin values ('" + id + "','" + pwd + "')";
+            sql = "insert into admin values ('" + id + "','" + pwd + "','" + 0 + "')";
             return dbHelper.ExecuteCommand(sql);
         }
         /// <summary>
@@ -107,8 +107,7 @@ namespace LibraryManagementSystem
         /// <param name="type"></param>
         public static void updateUser(string id, string pwd, string type)
         {
-            string sql = "update " + type + " set password = '" + pwd + "' where id = '" + id + "'";
-            dbHelper.ExecuteCommand(sql);
+            string sql = "update " + type + " set password = '" + pwd + "'，id = '" + id + "' where id = '" + id + "'";
         }
         /// <summary>
         /// 删除用户，同时要将改用户所借的书返回到原库存中

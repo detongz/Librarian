@@ -28,6 +28,8 @@ namespace LibraryManagementSystem
             this.manager = manager;
             InitializeComponent();
             this.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\AddBook.png");
+            this.btnQuit.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\Login_quit.png");
+            this.btnSave.BackgroundImage = Image.FromFile(Application.StartupPath + @"\Image\Login_submit.png");
         }
         /// <summary>
         /// 重载addbook初始化函数，作为修改图书信息界面使用

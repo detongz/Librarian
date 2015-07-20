@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddBook));
             this.txtContent = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -58,17 +57,17 @@
             // 
             this.txtContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContent.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtContent.Location = new System.Drawing.Point(225, 460);
+            this.txtContent.Location = new System.Drawing.Point(225, 425);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
-            this.txtContent.Size = new System.Drawing.Size(165, 146);
+            this.txtContent.Size = new System.Drawing.Size(165, 135);
             this.txtContent.TabIndex = 55;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(197, 440);
+            this.label10.Location = new System.Drawing.Point(197, 406);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 19);
             this.label10.TabIndex = 54;
@@ -78,7 +77,7 @@
             // 
             this.txtPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPrice.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPrice.Location = new System.Drawing.Point(86, 330);
+            this.txtPrice.Location = new System.Drawing.Point(86, 305);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(111, 16);
             this.txtPrice.TabIndex = 52;
@@ -87,7 +86,7 @@
             // 
             this.txtPressDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPressDate.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPressDate.Location = new System.Drawing.Point(86, 485);
+            this.txtPressDate.Location = new System.Drawing.Point(86, 448);
             this.txtPressDate.Name = "txtPressDate";
             this.txtPressDate.Size = new System.Drawing.Size(111, 16);
             this.txtPressDate.TabIndex = 51;
@@ -96,7 +95,7 @@
             // 
             this.txtPress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPress.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtPress.Location = new System.Drawing.Point(86, 446);
+            this.txtPress.Location = new System.Drawing.Point(86, 412);
             this.txtPress.Name = "txtPress";
             this.txtPress.Size = new System.Drawing.Size(111, 16);
             this.txtPress.TabIndex = 49;
@@ -105,7 +104,7 @@
             // 
             this.txtAuthor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAuthor.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtAuthor.Location = new System.Drawing.Point(86, 404);
+            this.txtAuthor.Location = new System.Drawing.Point(86, 373);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(111, 16);
             this.txtAuthor.TabIndex = 47;
@@ -114,7 +113,7 @@
             // 
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtName.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtName.Location = new System.Drawing.Point(86, 368);
+            this.txtName.Location = new System.Drawing.Point(86, 340);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(111, 16);
             this.txtName.TabIndex = 45;
@@ -123,16 +122,16 @@
             // 
             this.txtISBN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtISBN.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtISBN.Location = new System.Drawing.Point(86, 291);
+            this.txtISBN.Location = new System.Drawing.Point(86, 269);
             this.txtISBN.Name = "txtISBN";
             this.txtISBN.Size = new System.Drawing.Size(111, 16);
             this.txtISBN.TabIndex = 43;
             // 
             // pbCover
             // 
-            this.pbCover.Location = new System.Drawing.Point(203, 259);
+            this.pbCover.Location = new System.Drawing.Point(203, 239);
             this.pbCover.Name = "pbCover";
-            this.pbCover.Size = new System.Drawing.Size(125, 173);
+            this.pbCover.Size = new System.Drawing.Size(125, 160);
             this.pbCover.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCover.TabIndex = 56;
             this.pbCover.TabStop = false;
@@ -143,9 +142,9 @@
             this.btnView.FlatAppearance.BorderSize = 0;
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnView.Font = new System.Drawing.Font("Consolas", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(333, 415);
+            this.btnView.Location = new System.Drawing.Point(333, 383);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(57, 25);
+            this.btnView.Size = new System.Drawing.Size(57, 23);
             this.btnView.TabIndex = 57;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
@@ -153,39 +152,37 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSave.Location = new System.Drawing.Point(21, 563);
+            this.btnSave.Location = new System.Drawing.Point(21, 520);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 33);
+            this.btnSave.Size = new System.Drawing.Size(75, 30);
             this.btnSave.TabIndex = 58;
             this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnQuit
             // 
-            this.btnQuit.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnQuit.FlatAppearance.BorderSize = 0;
             this.btnQuit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuit.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnQuit.Location = new System.Drawing.Point(116, 563);
+            this.btnQuit.Location = new System.Drawing.Point(116, 520);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(75, 33);
+            this.btnQuit.Size = new System.Drawing.Size(75, 30);
             this.btnQuit.TabIndex = 59;
             this.btnQuit.Text = "Quit";
-            this.btnQuit.UseVisualStyleBackColor = false;
+            this.btnQuit.UseVisualStyleBackColor = true;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(197, 235);
+            this.label1.Location = new System.Drawing.Point(197, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 19);
             this.label1.TabIndex = 60;
@@ -195,7 +192,7 @@
             // 
             this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtStock.Font = new System.Drawing.Font("楷体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtStock.Location = new System.Drawing.Point(86, 530);
+            this.txtStock.Location = new System.Drawing.Point(86, 489);
             this.txtStock.MaxLength = 5;
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(110, 16);
@@ -206,7 +203,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 363);
+            this.label2.Location = new System.Drawing.Point(12, 335);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 19);
             this.label2.TabIndex = 72;
@@ -217,7 +214,7 @@
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(12, 524);
+            this.label11.Location = new System.Drawing.Point(12, 484);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 19);
             this.label11.TabIndex = 71;
@@ -228,7 +225,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(12, 325);
+            this.label9.Location = new System.Drawing.Point(12, 300);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(63, 19);
             this.label9.TabIndex = 70;
@@ -239,7 +236,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(12, 480);
+            this.label8.Location = new System.Drawing.Point(12, 443);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 19);
             this.label8.TabIndex = 69;
@@ -250,7 +247,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 441);
+            this.label7.Location = new System.Drawing.Point(12, 407);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 19);
             this.label7.TabIndex = 68;
@@ -261,7 +258,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 399);
+            this.label6.Location = new System.Drawing.Point(12, 368);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 19);
             this.label6.TabIndex = 67;
@@ -272,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 286);
+            this.label4.Location = new System.Drawing.Point(12, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 19);
             this.label4.TabIndex = 66;
@@ -280,10 +277,10 @@
             // 
             // AddBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(393, 608);
+            this.ClientSize = new System.Drawing.Size(393, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -306,7 +303,6 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtISBN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Book";

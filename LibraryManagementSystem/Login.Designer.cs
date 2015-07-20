@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.radReader = new System.Windows.Forms.RadioButton();
@@ -147,7 +146,6 @@
             this.Controls.Add(this.txtPwd);
             this.Controls.Add(this.txtID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户登录";
