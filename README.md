@@ -10,3 +10,5 @@
 然后直接双击 我的图书管理系统.sln 打开（由VS2013实现）。
 exe可执行文件在  LibraryManagementSystem\LibraryManagementSystem\bin\Debug  
 数据库文件在 LibraryManagementSystem\LibraryManagementSystem\data 
+
+LibraryManagementSystem.rar是为了防止git奇怪功能而保存的完整程序包。
